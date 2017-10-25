@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea/learn-typescript.iml
+.idea/modules.xml
+.idea/workspace.xml
+coverage
+dist
+node_modules
+package-lock.json
+typings

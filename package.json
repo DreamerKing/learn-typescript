@@ -1,0 +1,46 @@
+{
+  "name": "learn-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "compose.js",
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "browserify": "^14.5.0",
+    "chai": "^4.1.2",
+    "gulp-karma-runner": "^1.2.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "karma": "^1.7.1",
+    "karma-chai": "^0.1.0",
+    "karma-coverage": "^1.1.1",
+    "karma-mocha": "^1.3.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-sinon": "^1.0.5",
+    "mocha": "^4.0.1",
+    "readable-stream": "^2.3.3",
+    "run-sequence": "^2.2.0",
+    "sinon": "^4.0.1",
+    "vinyl-transform": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-tslint": "^8.1.2",
+    "gulp-typescript": "^3.2.2",
+    "tslint": "^5.8.0",
+    "typescript": "^2.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DreamerKing/learn-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DreamerKing/learn-typescript/issues"
+  },
+  "homepage": "https://github.com/DreamerKing/learn-typescript#readme"
+}
