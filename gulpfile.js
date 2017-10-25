@@ -87,7 +87,7 @@ gulp.task("copy-html", ["bundle"], (cb) => {
   })
 })
 
-gulp.task("browse", ['copy-html'], () => {
+gulp.task("default", ['copy-html'], () => {
   browserSync({
     server: {
       baseDir: "dist"
