@@ -2,7 +2,7 @@ module Geometry {
 	export interface Verctor2dInterface {
 		toArray(callback: (x: number[]) => void): void;
 		length(): number;
-		normalize()
+		normalize(): void;
 	}
 
 	export class Vector2d implements Verctor2dInterface {
@@ -21,7 +21,7 @@ module Geometry {
 			return Math.sqrt(this._x * this._x + this._y * this._y);
 		}
 
-		normalize() {
+		normalize(): void {
 			var len = 1 / this.length();
 			this._x *= len;
 			this._y *= len

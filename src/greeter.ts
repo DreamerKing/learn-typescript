@@ -9,7 +9,7 @@ function greeter(person: Person) {
 
 class Student {
 	fullName: string;
-	constructor(public firstName, public middleName, public lastName){
+	constructor(public firstName: string, public middleName: string, public lastName: string){
 		this.fullName = `${firstName} ${middleName} ${lastName}`;
 	}
 }

@@ -25,6 +25,7 @@
   "devDependencies": {
     "codecov": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-directory-sync": "^1.2.3",
     "gulp-tslint": "^8.1.2",
     "gulp-typescript": "^3.2.2",
     "tslint": "^5.8.0",
