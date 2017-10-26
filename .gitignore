@@ -1,10 +1,7 @@
-# Created by .ignore support plugin (hsz.mobi)
-.gitignore
-.idea/learn-typescript.iml
-.idea/modules.xml
-.idea/workspace.xml
+.idea
 coverage
 dist
 node_modules
+tmp
 package-lock.json
 typings

@@ -25,4 +25,4 @@ function sum(a: number, b: number, callback:(result: number) => void) {
 sum(23, 18, function(result){
 	console.log(`sum: ${result}`);
 });
-
+console.log("funck");
