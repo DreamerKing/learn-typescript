@@ -1,3 +1,4 @@
+"use strict";
 // class decrator
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -106,13 +107,13 @@ var HttpClient = /** @class */ (function () {
     };
     __decorate([
         logProperty("hello")
-    ], HttpClient.prototype, "apiUrl");
+    ], HttpClient.prototype, "apiUrl", void 0);
     __decorate([
         logMethod('http://localhost')
-    ], HttpClient.prototype, "getData");
+    ], HttpClient.prototype, "getData", null);
     __decorate([
         __param(0, logParams('uuid'))
-    ], HttpClient.prototype, "get");
+    ], HttpClient.prototype, "get", null);
     return HttpClient;
 }());
 var http = new HttpClient();
@@ -121,3 +122,4 @@ console.log(http.apiUrl);
 // http.getData(123, "King");
 // http.run();
 // console.log(">>", http.aipUrl);
+// 属性  方法 类

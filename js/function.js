@@ -11,34 +11,26 @@
 console.log(getInfo("King"));
 console.log(getInfo("King", 20));
  */
-/*  // 默认参数 可以不用在函数体内单独处理
- function getInfo(name: string, age: number = 10):string {
-     return `${name} ${age}`;
-}
-
-console.log(getInfo("King"));
-console.log(getInfo("King", 20));
- */
-/*  // 剩余参数
- function sum(...rest:number[]): number{
-    return rest.reduce((prev, curr) => prev + curr);
- }
-
- console.log(sum(1, 3, 6, 7)); */
-// 函数重载
-// js 中同名函数，前面的函数会被后面的函数覆盖
-/*
-function getInfo(name: string): string;
-function getInfo(age: number): number;
-
-function getInfo(str: any): any {
-    if(typeof str == "string") {
-        return str;
-    } else if(typeof str == "number"){
-        return str;
+// 内联注解
+var overload2 = function (foo) { return foo; };
+function sOrN(foo) {
+    if (typeof foo === 'number') {
+        return foo * foo;
+    }
+    else if (typeof foo === 'string') {
+        return "Hello " + foo;
     }
 }
-
-console.log(getInfo("King"));
-console.log(getInfo(20)); */
-// 箭头函数
+var overload = sOrN;
+var str = overload('Dreamer');
+var num = overload(12);
+console.log(str, num);
+var str2 = overload2('King');
+var num2 = overload2(23);
+// const b = overload2( true);
+// console.log(str2, num2, b);
+// 箭头函数类型注解 只能作为简单的函数类型使用，无法使用重载
+var simple = function (foo) { return String(foo); };
+console.log(simple(23));
+var bar3 = new Foo();
+console.log(bar3);

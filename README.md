@@ -1,8 +1,11 @@
-# learn-typescript
+# TypeScript
 视频教程
 https://www.bilibili.com/video/av38379328/?p=10
 
 [![Build Status](https://travis-ci.org/DreamerKing/learn-typescript.svg?branch=master)](https://travis-ci.org/DreamerKing/learn-typescript)  
+
+为什么需要TypeScript？   
+TypeScript较JavaScript有什么不同?
 
 特点：
 + 兼容JavaScript
@@ -66,3 +69,73 @@ interface StringArray {
 函数类型接口
 
 泛型 支持多种数据类型 解决类、接口和方法的复用性
+
+
++ Types
+  + Implicit Types 隐式类型
+  + Explicit Types 显式类型
++ Functions
++ Interfaces
++ Classes
++ Interface and classes together
++ Enums
++ Generics 泛型
+
+# 声明空间
++ 类型声明空间 类型注解
+  
+  ```ts
+  interface 
+  type
+  class
+  ```
++ 变量声明空间
+  
+  ```ts
+  const 
+  var 
+  let
+  class
+  ```
+
+# 模块
++ 全局模块
++ 文件模块  
+  文件中包含`export`或`import`会创建本地作用域。
+  配置文件中的`module`选项可配置模块输出类型。 
+
+  模块路径
+  + 相对路径
+  + 动态查找
+    1. 文件
+    2. 文件夹下的index.ts
+    3. 文件夹下的package.json中`type`或`main`选项指定的文件
+ 
+ # 命名空间 
+ 使用`namespace`来管理分组
+
+ 动态导入表达式  异步加载模块
+ + import()
+ + require.ensure()
+
+在Node中使用TypeScript
+```sh
+npm init -y
+npm install typescript -D
+npm install @types/node -D
+npx tsc --init
+npm install ts-node -D
+npm install nodemon -D
+nodemon --watch 'src/**/*.ts' --exec ts-node 'src/index.ts'
+```
+
+# 依赖管理
++ devDependencies
++ peerDependencies 外部依赖 装包时不会自动安装
++ dependencies 
+
+<hr/>   
+
+# 类型系统  
++ 可选的 js可以认为就是ts
++ 不阻止运行 即使类型错误也不妨碍运行
