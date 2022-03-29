@@ -8,11 +8,14 @@
     "typescript": "^3.9.5"
   },
   "devDependencies": {
+    "@types/node": "^16.11.6",
     "lite-server": "^2.5.4",
-    "ts-node": "^9.1.0"
+    "ts-node": "^10.3.0",
+    "tslib": "^2.3.1"
   },
   "scripts": {
-    "dev": "lite-server",
+    "dev2": "lite-server",
+    "dev": "ts-node src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsc -w"
   },
